@@ -7,6 +7,7 @@ export default class HomeController extends Controller {
   }
   public async name() {
     const { ctx } = this;
-    ctx.body = `Hello cnz!`;
+    ctx.body = 'Hello cnz!';
   }
+
 }

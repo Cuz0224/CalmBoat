@@ -1,6 +1,6 @@
 const qs = require('qs');
 
-const baseUrl = 'http://101.35.130.28:8888'; // 此处替换为你自己的 gitlab 地址
+const baseUrl = 'http://101.35.130.28:8880'; // 此处替换为你自己的 gitlab 地址
 
 export default app => {
   return {
@@ -19,6 +19,7 @@ export default app => {
     },
     async methodV({ url, method, params = {}, query = {} }) {
       const sendUrl = `${baseUrl}/api/v4${url}?${qs.stringify(query)}`;
+      console.log(sendUrl);
       try {
         const { data, code } = await app.curl(sendUrl, {
           dataType: 'json',

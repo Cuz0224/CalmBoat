@@ -18,6 +18,13 @@ export default class User extends Service {
     return false;
   }
 
+  public async getUserInfo({ access_token }) {
+    const userInfo = await this.ctx.helper.api.gitlab.user.getUserInfo({
+      access_token,
+    });
+    return userInfo;
+  }
+
   public async getTokenByApplications({ code }) {
     const { data: token } = await this.ctx.helper.utils.http.post({
       url: '/oauth/token',

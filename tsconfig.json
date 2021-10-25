@@ -10,6 +10,7 @@
     "charset": "utf8",
     "allowJs": false,
     "pretty": true,
+    "moduleResolution": "node",
     "noEmitOnError": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,

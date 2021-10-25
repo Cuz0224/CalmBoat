@@ -1,0 +1,94 @@
+Arguments: 
+  /usr/local/bin/node /Users/cuzchen/.yarn/bin/yarn.js add numjucks
+
+PATH: 
+  /Users/cuzchen/.yarn/bin:/Users/cuzchen/.config/yarn/global/node_modules/.bin:/opt/homebrew/bin:/opt/homebrew/sbin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/Users/cuzchen/.yarn/bin:/Users/cuzchen/.config/yarn/global/node_modules/.bin:/opt/homebrew/bin:/opt/homebrew/sbin:/opt/local/bin:/opt/local/sbin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  14.16.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.npm.taobao.org/numjucks: Not found
+      at Request.params.callback [as _callback] (/Users/cuzchen/.yarn/lib/cli.js:66988:18)
+      at Request.self.callback (/Users/cuzchen/.yarn/lib/cli.js:140749:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (/Users/cuzchen/.yarn/lib/cli.js:141721:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (/Users/cuzchen/.yarn/lib/cli.js:141643:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (internal/streams/readable.js:1327:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  {
+    "name": "ClamBoat",
+    "version": "1.0.0",
+    "description": "A DevOps",
+    "private": true,
+    "egg": {
+      "typescript": true,
+      "declarations": true
+    },
+    "scripts": {
+      "start": "egg-scripts start --daemon --title=egg-server-ClamBoat",
+      "stop": "egg-scripts stop --title=egg-server-ClamBoat",
+      "dev": "egg-bin dev",
+      "debug": "egg-bin debug",
+      "test-local": "egg-bin test",
+      "test": "npm run lint -- --fix && npm run test-local",
+      "cov": "egg-bin cov",
+      "tsc": "ets && tsc -p tsconfig.json",
+      "ci": "npm run lint && npm run cov && npm run tsc",
+      "autod": "autod",
+      "lint": "eslint . --ext .ts",
+      "clean": "ets clean"
+    },
+    "dependencies": {
+      "egg": "^2.6.1",
+      "egg-helper": "^1.1.5",
+      "egg-scripts": "^2.6.0"
+    },
+    "devDependencies": {
+      "@types/mocha": "^2.2.40",
+      "@types/node": "^7.0.12",
+      "@types/supertest": "^2.0.0",
+      "autod": "^3.0.1",
+      "autod-egg": "^1.1.0",
+      "egg-bin": "^4.11.0",
+      "egg-ci": "^1.8.0",
+      "egg-mock": "^3.16.0",
+      "eslint": "^6.7.2",
+      "eslint-config-egg": "^8.0.0",
+      "nodemailer": "^6.6.3",
+      "tslib": "^1.9.0",
+      "typescript": "^3.0.0"
+    },
+    "engines": {
+      "node": ">=8.9.0"
+    },
+    "ci": {
+      "version": "8"
+    },
+    "repository": {
+      "type": "git",
+      "url": ""
+    },
+    "eslintIgnore": [
+      "coverage"
+    ],
+    "author": "Cuz0224",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
